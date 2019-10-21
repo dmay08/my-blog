@@ -14,9 +14,9 @@ const blogPostsRoutes = require('./routes/blogPosts')
 
 // Configure the app (app.set)
 app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'views'));// hooks up 'Views' folder
+app.set('views', path.join(__dirname, 'views')); // tells Express WHERE views can be found ('views' folder)
 
-app.locals.title = 'First Express'
+app.locals.title = 'My Blog'
 
 // Mount middleware (app.use)
 app.use(function (req, res, next) {
